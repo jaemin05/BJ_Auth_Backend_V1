@@ -1,4 +1,4 @@
-package com.example.resourceserver.security;
+package com.example.authorizationserver.security;
 
 import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;

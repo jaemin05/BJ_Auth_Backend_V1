@@ -1,6 +1,6 @@
-package com.example.resourceserver.global.error;
+package com.example.authorizationserver.global.error;
 
-import com.example.resourceserver.global.error.exception.BJException;
+import com.example.authorizationserver.global.error.exception.BJException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

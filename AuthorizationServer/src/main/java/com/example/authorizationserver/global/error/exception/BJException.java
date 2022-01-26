@@ -1,6 +1,6 @@
-package com.example.resourceserver.global.error.exception;
+package com.example.authorizationserver.global.error.exception;
 
-import com.example.resourceserver.global.error.ErrorCode;
+import com.example.authorizationserver.global.error.ErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

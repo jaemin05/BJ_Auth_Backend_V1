@@ -1,4 +1,4 @@
-package com.example.resourceserver.global.error;
+package com.example.authorizationserver.global.error;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

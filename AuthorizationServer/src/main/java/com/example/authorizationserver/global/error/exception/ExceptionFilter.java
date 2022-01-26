@@ -1,6 +1,6 @@
-package com.example.resourceserver.global.error.exception;
+package com.example.authorizationserver.global.error.exception;
 
-import com.example.resourceserver.global.error.ErrorResponse;
+import com.example.authorizationserver.global.error.ErrorResponse;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;

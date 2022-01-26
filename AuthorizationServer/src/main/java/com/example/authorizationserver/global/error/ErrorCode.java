@@ -1,4 +1,4 @@
-package com.example.resourceserver.global.error;
+package com.example.authorizationserver.global.error;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
