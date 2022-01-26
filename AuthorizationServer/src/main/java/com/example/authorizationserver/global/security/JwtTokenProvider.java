@@ -1,4 +1,4 @@
-package com.example.authorizationserver.security;
+package com.example.authorizationserver.global.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
