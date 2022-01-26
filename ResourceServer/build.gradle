@@ -29,6 +29,7 @@ dependencies {
     implementation 'com.konghq:unirest-java:3.7.02' // http 통신을 쉽게 하기 위함
     compileOnly 'org.projectlombok:lombok' // 변수 get, set 함수 편리하게 만들기 위함
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'// jwt
     runtimeOnly 'mysql:mysql-connector-java' // mysql 사용
 
 }
