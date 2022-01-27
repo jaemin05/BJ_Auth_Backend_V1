@@ -5,7 +5,9 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class ErrorCode {
+public enum ErrorCode {
+    USER_NOT_FOUND(404, "User Not Found");
+
     private final int status;
     private final String message;
 }
