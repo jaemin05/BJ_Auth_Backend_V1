@@ -1,13 +1,14 @@
 package com.example.authorizationserver.domain.user.entity;
 
 import com.example.authorizationserver.domain.user.api.dto.request.SignupRequest;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 public class User {
     @Id
@@ -22,9 +23,6 @@ public class User {
 
     @Column(nullable = false, unique = true)
     private String nickname;
-
-    @Column(nullable = false)
-    private UserStates userStates;
 
     public User(SignupRequest signupRequest){
         this.username = signupRequest.getUsername();
