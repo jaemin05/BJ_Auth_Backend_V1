@@ -1,4 +1,4 @@
-package com.example.authorizationserver.global.security;
+package com.example.authorizationserver.global.security.jwt;
 
 import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
