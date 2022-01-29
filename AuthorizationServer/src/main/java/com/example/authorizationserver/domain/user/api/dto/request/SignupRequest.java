@@ -16,4 +16,9 @@ public class SignupRequest {
 
     @NotBlank(message = "nickname은 공백을 허용하지 않습니다.")
     private String nickname;
+
+    public SignupRequest encodePassword(String password){
+        this.password = password;
+        return this;
+    }
 }
