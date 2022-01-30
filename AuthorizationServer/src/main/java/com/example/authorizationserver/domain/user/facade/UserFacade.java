@@ -3,6 +3,7 @@ package com.example.authorizationserver.domain.user.facade;
 import com.example.authorizationserver.domain.user.api.dto.request.SignupRequest;
 import com.example.authorizationserver.domain.user.entity.User;
 import com.example.authorizationserver.domain.user.exception.UserAlreadyExistsException;
+import com.example.authorizationserver.domain.user.exception.UserNotFoundException;
 import com.example.authorizationserver.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -23,6 +24,11 @@ public class UserFacade {
                         )
                 )
         );
+    }
+
+    public User getByUsername(String username){
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> UserNotFoundException.EXCEPTION);
     }
 
     public void isAlreadyExists(String username){
