@@ -12,8 +12,9 @@ spring:
         database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     main:
         allow-bean-definition-overriding: true
-server:
-    port: 8081
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
 
 redis:
     port: ${REDIS_PORT}
